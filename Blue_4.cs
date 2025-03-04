@@ -73,11 +73,7 @@ namespace Lab_6
             {
                 get
                 {
-                    if (_teams == null || _teams.Length == 0) return null;
-                    Team[] newTeams = new Team[_teams.Length];
-                    for (int i = 0; i < _teams.Length; i++)
-                        newTeams[i] = _teams[i];
-                    return newTeams;
+                    return _teams;
                 }
             }
 
